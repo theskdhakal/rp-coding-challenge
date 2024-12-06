@@ -1,4 +1,4 @@
-import { calculateRevenue } from "../helper/functions";
+import { calculateExpenses, calculateNetProfitMargin, calculateRevenue } from "../helper/functions";
 
 
 const mockData={
@@ -54,14 +54,40 @@ const mockData={
 // mock the data import
 jest.mock("../../data.json", () => mockData);
 
-
+// +++++++++++++++++++++++++++++++ calcuting revenue function test ++++++++++++++++++++++++++++++++++
 
 describe("Revenue Calculation", () => {
     
   it("should calculate the sum of all revenue correctly", () => {
     const totalRevenue = calculateRevenue(mockData);
 
-    // The expected revenue is the sum of 100 + 200 from the mock data
+
     expect(totalRevenue).toBe(3000); // Expected revenue: 100 + 200 = 300
   });
 });
+
+
+// +++++++++++++++++++++++++++++++ calcuting expenses function test ++++++++++++++++++++++++++++++++++
+
+describe("Expense Calculation", () => {
+    
+  it("should calculate the sum of all expenses correctly", () => {
+    const totalExpense = calculateExpenses(mockData);
+
+
+    expect(totalExpense).toBe(500); // Expected revenue: 100 + 200 = 300
+  });
+});
+
+// +++++++++++++++++++++++++++++++ calcuting net profit margin function test ++++++++++++++++++++++++++++++++++
+
+describe("net profit margin Calculation", () => {
+    
+  it("should calculate net profit margin correctly", () => {
+    const netProfitMargin = calculateNetProfitMargin(mockData);
+
+  
+    expect(netProfitMargin).toBeCloseTo(0.833,3); // Expected revenue: 100 + 200 = 300
+  });
+});
+
