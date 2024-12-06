@@ -1,3 +1,4 @@
+import { calculateRevenue } from "../helper/functions";
 
 
 const mockData={
@@ -53,7 +54,7 @@ const mockData={
 // mock the data import
 jest.mock("../../data.json", () => mockData);
 
-import {calculateRevenue} from "../index"
+
 
 describe("Revenue Calculation", () => {
     
