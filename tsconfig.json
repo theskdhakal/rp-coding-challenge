@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",        // Or "esnext" if you're using ES modules
+      "esModuleInterop": true,     // Ensure default imports work for CommonJS
+      "resolveJsonModule": true,   // Allow importing JSON files
+      "strict": true,              // Optional, to enforce stricter type checks
+      "outDir": "./dist",          // Optional, for output directory
+      "rootDir": "./src"           // Optional, for the root directory
+    }
+  }
+  
