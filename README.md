@@ -1,11 +1,11 @@
-<!-- ===================Project Setup and Running Instructions =========================== -->
+===================Project Setup and Running Instructions ===========================
 
 Prerequisites:
 
 Node.js and npm  installed on your system.
 
 
-<!-- Installation: -->
+Installation:
 
 Clone the Repository:
 Bash
@@ -16,21 +16,22 @@ Bash
 
 cd rp-coding-challene
 npm install
+
 Running the Project:
 
-<!-- Compile TypeScript: -->
+Compile TypeScript:
 
 tsc
 
-<!-- Start the Application: -->
+Start the Application:
 npm start
 
 
-<!-- Running Tests: -->
+Running Tests:
 npm test
 
 
-<!-- =================================Project Structure:======================= -->
+=================================Project Structure:=======================
 
 project_root
 ├── data.json
